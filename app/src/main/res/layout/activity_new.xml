@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NewActivity">
+
+    <ImageView
+        android:id="@+id/avengers"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avengers"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:layout_margin="10dp"
+        android:layout_below="@id/avengers"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_margin="10dp"
+        android:layout_below="@id/mobile"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_margin="10dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+
+        />
+    <Button
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:background="@null"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/registerYourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Yourself"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
